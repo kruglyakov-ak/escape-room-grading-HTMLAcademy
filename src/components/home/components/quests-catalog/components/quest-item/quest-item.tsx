@@ -1,8 +1,13 @@
 import { ReactComponent as IconPerson } from '../../../../../../assets/img/icon-person.svg';
 import { ReactComponent as IconPuzzle } from '../../../../../../assets/img/icon-puzzle.svg';
+import { Quest } from '../../../../../../types/quest';
 import * as S from './quest-item.styled';
 
-const QuestsItem = (): JSX.Element => (
+type QuestsItemProps = {
+  quest: Quest;
+}
+
+const QuestsItem = ({ quest }: QuestsItemProps): JSX.Element => (
   <S.QuestItem>
     <S.QuestItemLink to="/quest">
       <S.Quest>
