@@ -13,7 +13,7 @@ const Page404 = (): JSX.Element => (
         <PageTitle>Страница не найдена.<br /> Ошибка 404.</PageTitle>
         <PageSubtext>
           <S.Link to="/">
-            Вернуться на главную
+            на главную
           </S.Link>
         </PageSubtext>
       </PageHeading>

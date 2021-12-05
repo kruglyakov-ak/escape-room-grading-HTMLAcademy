@@ -38,6 +38,7 @@ const Link = styled(RouterLink)`
   letter-spacing: 0.03em;
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: underline;
 
   color: ${({ theme }) => theme.color.whiteSmoke};
 
