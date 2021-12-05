@@ -4,7 +4,7 @@ import {
   PageHeading,
   PageSubtext,
 } from '../common/common';
-import { QuestsCatalog } from './components/components';
+import QuestsCatalog from './components/quests-catalog/quests-catalog';
 import * as S from './home.styled';
 
 const HomePage = (): JSX.Element => (
