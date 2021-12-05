@@ -4,7 +4,7 @@ import { ReactComponent as IconClock } from '../../assets/img/icon-clock.svg';
 import { ReactComponent as IconPerson } from '../../assets/img/icon-person.svg';
 import { ReactComponent as IconPuzzle } from '../../assets/img/icon-puzzle.svg';
 import * as S from './detailed-quest.styled';
-import { BookingModal } from './components/components';
+import BookingModal from './components/booking-modal/booking-modal';
 
 const DetailedQuest = (): JSX.Element => {
   const [isBookingModalOpened, setIsBookingModalOpened] = useState(false);
