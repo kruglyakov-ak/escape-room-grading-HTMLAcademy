@@ -11,6 +11,16 @@ const loadQuests = createAction(
   }),
 );
 
+const loadQuestById = createAction(
+  ActionType.LoadQuestById,
+  (currentQuest: Quest) => ({
+    payload: {
+      currentQuest,
+    },
+  }),
+);
+
 export {
-  loadQuests
+  loadQuests,
+  loadQuestById
 }

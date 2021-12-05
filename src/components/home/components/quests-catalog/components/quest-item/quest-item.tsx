@@ -19,7 +19,7 @@ const QuestsItem = ({ quest }: QuestsItemProps): JSX.Element => {
 
   return (
     <S.QuestItem>
-      <S.QuestItemLink to={`${AppRoute.Main}quest/${id}`}>
+      <S.QuestItemLink to={`${AppRoute.Main}quests/${id}`}>
         <S.Quest>
           <S.QuestImage
             src={previewImg}

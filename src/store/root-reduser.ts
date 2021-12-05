@@ -1,9 +1,10 @@
 import { createReducer } from '@reduxjs/toolkit';
 import { State } from '../types/state';
-import { loadQuests } from './actions';
+import { loadQuestById, loadQuests } from './actions';
 
 const initialState: State = {
   quests: [],
+  currentQuest: null,
 };
 
 const rootReducer = createReducer(initialState, (builder) => {
@@ -11,6 +12,10 @@ const rootReducer = createReducer(initialState, (builder) => {
     .addCase(loadQuests, (state, action) => {
       const { quests } = action.payload;
       state.quests = quests;
+    })
+    .addCase(loadQuestById, (state, action) => {
+      const { currentQuest } = action.payload;
+      state.currentQuest = currentQuest;
     })
 });
 

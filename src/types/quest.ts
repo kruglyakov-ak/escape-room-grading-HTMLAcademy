@@ -1,4 +1,4 @@
-import { DifficultylevelType } from "../const"
+import { DifficultylevelType, QuestType } from "../const"
 
 type Quest = {
   id:	number,
@@ -6,7 +6,7 @@ type Quest = {
   description: string,
   previewImg: string,
   coverImg:	string
-  type: string,
+  type: QuestType,
   level: DifficultylevelType,
   peopleCount: number[],
   duration: number,
