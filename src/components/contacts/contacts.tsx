@@ -1,8 +1,8 @@
-import { MainLayout, PageTitle, PageSubtext } from 'components/common/common';
-import contactsMap from 'assets/img/contacts-map.jpg';
+import { MainLayout, PageTitle, PageSubtext } from '../common/common';
+import contactsMap from '../../assets/img/contacts-map.jpg';
 import * as S from './contacts.styled';
 
-const Contacts = () => (
+const Contacts = (): JSX.Element => (
   <MainLayout>
     <S.Main>
       <S.ContentWrapper>

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'components/common/common';
+import { Link } from '../../../common/common';
 
 const Tabs = styled.ul`
   display: flex;
@@ -36,7 +36,7 @@ const TabItem = styled.li`
   }
 `;
 
-const TabBtn = styled.button.attrs({ type: 'button' })`
+const TabBtn = styled.button.attrs({ type: 'button' })<{ isActive?: boolean }>`
   display: flex;
   align-items: center;
   padding: 0;

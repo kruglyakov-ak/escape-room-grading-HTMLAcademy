@@ -1,6 +1,6 @@
 import * as S from './footer.styled';
 
-const Footer = () => (
+const Footer = (): JSX.Element => (
   <S.StyledFooter>
     <S.Socials>
       <S.SocialItem>
