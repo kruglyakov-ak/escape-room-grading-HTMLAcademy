@@ -5,7 +5,9 @@ const Header = (): JSX.Element => (
   <S.StyledHeader>
     <S.HeaderWrapper>
       <S.Logo>
-        <S.Image src={logo} alt="Логотип Escape Room" width="134" height="50" />
+        <S.Link to="/">
+          <S.Image src={logo} alt="Логотип Escape Room" width="134" height="50" />
+        </S.Link>
       </S.Logo>
 
       <S.Navigation>
