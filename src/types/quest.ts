@@ -6,10 +6,7 @@ type Quest = {
   coverImg:	string
   type: string,
   level: string,
-  peopleCount: {
-    0: number,
-    1: number,
-  },
+  peopleCount: number[],
   duration: number,
 }
 

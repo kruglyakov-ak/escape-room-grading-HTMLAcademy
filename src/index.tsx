@@ -5,6 +5,7 @@ import { rootReducer } from './store/root-reduser';
 import { Provider } from 'react-redux';
 import App from './components/app/app';
 import { createAPI } from './services/api';
+import { fetchQuestsAction } from './store/api-actions';
 
 const api = createAPI();
 
@@ -17,6 +18,8 @@ const store = configureStore({
       },
     }),
 });
+
+(store.dispatch)(fetchQuestsAction());
 
 render(
   <StrictMode>
