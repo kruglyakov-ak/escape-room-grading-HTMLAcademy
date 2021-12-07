@@ -1,6 +1,6 @@
 import { MainLayout, PageTitle, PageSubtext } from '../common/common';
-import contactsMap from '../../assets/img/contacts-map.jpg';
 import * as S from './contacts.styled';
+import LeafletMap from './components/map';
 
 const Contacts = (): JSX.Element => (
   <MainLayout>
@@ -18,7 +18,7 @@ const Contacts = (): JSX.Element => (
               <S.ContactAddress>
                 Санкт-Петербург,
                 <br />
-                Набережная реки Карповка, д 5
+                Набережная реки Карповки, д 5
               </S.ContactAddress>
             </S.ContactValue>
 
@@ -41,12 +41,7 @@ const Contacts = (): JSX.Element => (
           </S.ContactsList>
 
           <S.ContactsMap>
-            <S.ContactsMapImage
-              src={contactsMap}
-              alt="мы находимся по адресу Санкт-Петербург, Набережная реки Карповка, д 5"
-              width="649"
-              height="336"
-            />
+            <LeafletMap />
           </S.ContactsMap>
         </S.Contacts>
       </S.ContentWrapper>
