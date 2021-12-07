@@ -15,7 +15,8 @@ const enum DifficultylevelType {
   Hard = 'hard'
 }
 
-const enum QuestType {
+enum QuestType {
+  All = 'all',
   Horror = 'horror',
   Mystic = 'mystic',
   Detective = 'detective',
@@ -30,6 +31,7 @@ const DifficultylevelToReadable = {
 }
 
 const QuestTypeToReadable = {
+  [QuestType.All]: '',
   [QuestType.Horror]: 'ужасы',
   [QuestType.Mystic]: 'мистика',
   [QuestType.Detective]: 'детектив',

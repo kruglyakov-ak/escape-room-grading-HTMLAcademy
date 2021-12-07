@@ -1,4 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
+import { QuestType } from '../const';
 import { ActionType } from "../types/action";
 import { Quest } from '../types/quest';
 
@@ -20,7 +21,17 @@ const loadQuestById = createAction(
   }),
 );
 
+const changeSortType = createAction(
+  ActionType.ChangeSortType,
+  (sortType: QuestType) => ({
+    payload: {
+      sortType,
+    },
+  }),
+);
+
 export {
   loadQuests,
-  loadQuestById
+  loadQuestById,
+  changeSortType
 }
