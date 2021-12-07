@@ -7,6 +7,7 @@ const enum AppRoute {
 const enum APIRoute {
   Quests = '/quests',
   Quest = '/quests/',
+  Orders = '/orders',
 }
 
 const enum DifficultylevelType {
@@ -39,11 +40,24 @@ const QuestTypeToReadable = {
   [QuestType.SciFi]: 'sci-fi',
 }
 
+const enum NameBookingInputs {
+  Name = 'booking-name',
+  Phone = 'booking-phone',
+  People = 'booking-people',
+  Legal = 'booking-legal',
+}
+
+const BOOKING_ERROR_PHONE = 'Телефонный номер должен содержать 10 цифр.'
+const BOOKING_ERROR_PEOPLE = 'Количество гостей должно быть больше нуля.'
+
 export {
   AppRoute,
   APIRoute,
   DifficultylevelType,
   DifficultylevelToReadable,
   QuestType,
-  QuestTypeToReadable
+  QuestTypeToReadable,
+  NameBookingInputs,
+  BOOKING_ERROR_PHONE,
+  BOOKING_ERROR_PEOPLE
 };

@@ -13,6 +13,7 @@ const appTheme = {
   color: {
     white: '#FFFFFF',
     black: '#000000',
+    red: '#b22222',
     whiteSmoke: '#F0F0F0',
     whisper: '#E5E5E5',
     whisper2: '#E6E6E6',

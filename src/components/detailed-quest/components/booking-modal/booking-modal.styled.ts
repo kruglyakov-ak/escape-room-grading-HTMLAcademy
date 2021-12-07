@@ -115,7 +115,7 @@ const BookingInput = styled.input`
   }
 `;
 
-const BookingSubmit = styled(Button)<{ type?: string }>`
+const BookingSubmit = styled(Button)<{ type?: string, disabled?: boolean }>`
   align-self: center;
   margin-top: 55px;
   margin-bottom: 21px;
@@ -203,11 +203,15 @@ const BookingCheckboxInput = styled.input.attrs({
 const BookingCheckboxText = styled.span`
   font-size: ${({ theme }) => theme.font.semibase};
   line-height: 144%;
-  color: ${({ theme }) => theme.color.whisper2};
+  color: ${({ theme }) => theme.color.whisper};
 `;
 
 const BookingLegalLink = styled.a`
   text-decoration: underline;
+`;
+
+const BookingErrorPostText = styled.p`
+  color: ${({ theme }) => theme.color.red};
 `;
 
 export {
@@ -226,4 +230,5 @@ export {
   BookingCheckboxInput,
   BookingCheckboxText,
   BookingLegalLink,
+  BookingErrorPostText
 };

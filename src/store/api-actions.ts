@@ -1,5 +1,6 @@
 import { APIRoute } from "../const";
 import { ThunkActionResult } from "../types/action";
+import { OrderPost } from "../types/orderPost";
 import { Quest } from "../types/quest";
 import { loadQuestById, loadQuests } from "./actions";
 
@@ -15,7 +16,18 @@ const fetchQuestByIdAction = (id: number): ThunkActionResult =>
     dispatch(loadQuestById(data));
   };
 
+const postBookingOrderAction = (orderPost: OrderPost, onSuccess: () => void): ThunkActionResult =>
+  async (_dispatch, _getState, api): Promise<void> => {
+    try {
+     await api.post(APIRoute.Orders, orderPost);
+      onSuccess();
+    } catch(err) {
+      alert(err);
+    }
+  };
+
 export {
   fetchQuestsAction,
-  fetchQuestByIdAction
+  fetchQuestByIdAction,
+  postBookingOrderAction
  }
