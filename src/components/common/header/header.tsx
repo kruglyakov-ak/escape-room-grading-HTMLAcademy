@@ -24,15 +24,15 @@ const Header = (): JSX.Element => {
             </S.LinkItem>
 
             <S.LinkItem>
-              <S.Link to="#">Новичкам</S.Link>
+              <S.Link $isActiveLink={history.location.pathname === AppRoute.New} to={AppRoute.New}>Новичкам</S.Link>
             </S.LinkItem>
 
             <S.LinkItem>
-              <S.Link to="#">Отзывы</S.Link>
+              <S.Link $isActiveLink={history.location.pathname === AppRoute.Reviews} to={AppRoute.Reviews}>Отзывы</S.Link>
             </S.LinkItem>
 
             <S.LinkItem>
-              <S.Link to="#">Акции</S.Link>
+              <S.Link $isActiveLink={history.location.pathname === AppRoute.Action} to={AppRoute.Action}>Акции</S.Link>
             </S.LinkItem>
 
             <S.LinkItem>
