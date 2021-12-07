@@ -11,6 +11,7 @@ import { appTheme } from './common';
 import * as S from './app.styled';
 import Page404 from '../page-404/page-404';
 import { AppRoute } from '../../const';
+import PageInDev from '../page-in-dev/page-in-dev';
 
 const App = (): JSX.Element => (
   <ThemeProvider theme={appTheme}>
@@ -25,6 +26,15 @@ const App = (): JSX.Element => (
         </Route>
         <Route exact path={AppRoute.Main}>
           <Home />
+        </Route>
+        <Route exact path={AppRoute.New}>
+          <PageInDev />
+        </Route>
+        <Route exact path={AppRoute.Action}>
+          <PageInDev />
+        </Route>
+        <Route exact path={AppRoute.Reviews}>
+          <PageInDev />
         </Route>
         <Route
         render={() => (

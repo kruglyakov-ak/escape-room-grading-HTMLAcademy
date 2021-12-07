@@ -2,6 +2,9 @@ const enum AppRoute {
   Main = '/',
   Contacts = '/contacts',
   Quest = '/detailed-quest/:id',
+  New = '/new',
+  Reviews  = '/reviews ',
+  Action = '/action',
 }
 
 const enum APIRoute {
@@ -50,6 +53,12 @@ const enum NameBookingInputs {
 const BOOKING_ERROR_PHONE = 'Телефонный номер должен содержать 10 цифр.'
 const BOOKING_ERROR_PEOPLE = 'Количество гостей должно быть больше нуля.'
 
+const enum PageName {
+  New = 'НОВИЧКАМ',
+  Action = 'АКЦИИ',
+  Reviews = 'ОТЗЫВЫ'
+}
+
 export {
   AppRoute,
   APIRoute,
@@ -59,5 +68,6 @@ export {
   QuestTypeToReadable,
   NameBookingInputs,
   BOOKING_ERROR_PHONE,
-  BOOKING_ERROR_PEOPLE
+  BOOKING_ERROR_PEOPLE,
+  PageName
 };

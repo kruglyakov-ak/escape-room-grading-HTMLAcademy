@@ -1,3 +1,4 @@
+import { AppRoute } from '../../const';
 import {
   MainLayout,
   PageTitle,
@@ -12,7 +13,7 @@ const Page404 = (): JSX.Element => (
       <PageHeading>
         <PageTitle>Страница не найдена.<br /> Ошибка 404.</PageTitle>
         <PageSubtext>
-          <S.Link to="/">
+          <S.Link to={AppRoute.Main}>
             на главную
           </S.Link>
         </PageSubtext>
