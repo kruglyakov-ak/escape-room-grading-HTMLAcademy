@@ -1,7 +1,7 @@
 const enum AppRoute {
   Main = '/',
   Contacts = '/contacts',
-  Quest = '/quests/:id',
+  Quest = '/detailed-quest/:id',
 }
 
 const enum APIRoute {

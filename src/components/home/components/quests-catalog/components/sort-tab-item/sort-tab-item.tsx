@@ -4,7 +4,7 @@ import { ReactComponent as IconHorrors } from '../../../../../../assets/img/icon
 import { ReactComponent as IconMystic } from '../../../../../../assets/img/icon-mystic.svg';
 import { ReactComponent as IconDetective } from '../../../../../../assets/img/icon-detective.svg';
 import { ReactComponent as IconScifi } from '../../../../../../assets/img/icon-scifi.svg';
-import * as S from './sort-tabs.styled';
+import * as S from './sort-tab-item.styled';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCurrentSortType } from '../../../../../../store/selectors';
 import { QuestType } from '../../../../../../const';
